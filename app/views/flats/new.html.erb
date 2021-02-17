@@ -2,14 +2,13 @@
   <div class="title">
     <h2>Create a new flat</h2>
   </div>
-  <p><%= @flat %></p>
   <div class="new-flat-form">
-    <%= simple_form_for(@flat) do |f| %>%
-      <%= f.string :name %>
-      <%= f.string :address %>
-      <%= f.text :description %>
-      <%= f.integer :price_per_night %>
-      <%= f.integer :number_of_guests %>
+    <%= simple_form_for(@flat) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :price_per_night %>
+      <%= f.input :number_of_guests %>
       <%= f.submit %>
     <% end %>
   </div>
