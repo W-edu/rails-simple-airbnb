@@ -1,0 +1,15 @@
+<div class="container">
+  
+  <% @flats.each do |flat| %>
+    <div class="card">
+      <h2 class="card-flat-name"><%= flat.name %></h2>
+      <p class="card-flat-address"><%= flat.address %></p>
+      <p class="card-flat-description"><%= flat.description %></p>
+      <div class="price-capacity-flexbox">
+        <div class="capacity"><%= flat.number_of_guests %></div>
+        <div class="price">£<%= flat.price_per_night %></div>        
+      </div>
+    </div>
+  <% end %>
+  
+</div>
